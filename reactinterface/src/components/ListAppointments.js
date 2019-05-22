@@ -42,7 +42,7 @@ class ListAppointments extends Component {
               </div>
 
               <div className="owner-name">
-                <span className="label-item">Owner: </span>
+                <span className="label-item">Lead: </span>
                 <span
                   contentEditable="true"
                   suppressContentEditableWarning

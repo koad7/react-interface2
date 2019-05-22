@@ -54,7 +54,7 @@ export default class AddAppointments extends Component {
         
       }>
       <div className="apt-addheading card-header bg-primary text-white" onClick={this.props.toggleForm}>
-        <FaPlus/> Add Appointment
+        <FaPlus/> Add a moment
       </div>
 
       <div className="card-body">
@@ -66,14 +66,14 @@ export default class AddAppointments extends Component {
               htmlFor="petName"
               readOnly
             >
-              Pet Name
+              Moment
             </label>
             <div className="col-md-10">
               <input
                 type="text"
                 className="form-control"
                 name="petName"
-                placeholder="Pet's Name"
+                placeholder="Moment"
                 value={this.state.petName}
                 onChange={this.handleChange}
 
@@ -86,14 +86,14 @@ export default class AddAppointments extends Component {
               className="col-md-2 col-form-label text-md-right"
               htmlFor="ownerName"
             >
-              Pet Owner
+              Lead
             </label>
             <div className="col-md-10">
               <input
                 type="text"
                 className="form-control"
                 name="ownerName"
-                placeholder="Owner's Name"
+                placeholder="Lead"
                 value={this.state.petOwner}
                 onChange={this.handleChange}
               />
@@ -105,7 +105,7 @@ export default class AddAppointments extends Component {
               className="col-md-2 col-form-label text-md-right"
               htmlFor="aptDate"
             >
-              Date
+              Start
             </label>
             <div className="col-md-4">
               <input
@@ -137,7 +137,7 @@ export default class AddAppointments extends Component {
 
           <div className="form-group form-row">
             <label className="col-md-2 text-md-right" htmlFor="aptNotes">
-              Apt. Notes
+              Action/Engagement Plan
             </label>
             <div className="col-md-10">
               <textarea
@@ -146,7 +146,7 @@ export default class AddAppointments extends Component {
                 cols="50"
                 name="aptNotes"
                 id="aptNotes"
-                placeholder="Appointment Notes"
+                placeholder="Action/Engagement Plan"
                 value={this.state.aptNotes}
                 onChange={this.handleChange}
               />
@@ -159,7 +159,7 @@ export default class AddAppointments extends Component {
                 type="submit"
                 className="btn btn-primary d-block ml-auto"
               >
-                Add Appointment
+                Add Moment
               </button>
             </div>
           </div>

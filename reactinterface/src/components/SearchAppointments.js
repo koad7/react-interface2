@@ -31,7 +31,7 @@ export default class SearchAppointments extends Component {
                 } 
                 onClick={e => this.props.changeOrder('petName', this.props.orderDir)}
                 href="#">
-                  Pet Name
+                  Moment
                 </button>
                 <button className={
                     'sort-by dropdown-item' + 
@@ -39,7 +39,7 @@ export default class SearchAppointments extends Component {
                 } 
                 onClick={e => this.props.changeOrder('aptDate', this.props.orderDir)}
                 href="#">
-                  Date
+                  Start Date
                 </button>
                 <button className={
                     'sort-by dropdown-item' + 
@@ -47,7 +47,7 @@ export default class SearchAppointments extends Component {
                 } 
                 onClick={e => this.props.changeOrder('ownerName', this.props.orderDir)}
                   href="#">
-                  Owner
+                  Lead
                 </button>
                 <div role="separator" className="dropdown-divider" />
                 <button className={
